@@ -1,0 +1,53 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  {% static ''}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Register</title>
+  </head>
+  <body>
+
+  <div class="container">
+<h1 style="text-align:center">Register</h1>
+
+<form class="form text-xl-center" method="post" action="/Register">
+  <div class="form-group my-4">
+    <!-- <label for="FullName">Full name</label> -->
+    <input type="text" class="form-group" id="FullName" name="fname" aria-describedby="FullNameHelp" placeholder="Enter FullName">
+<br>
+    <!-- <label for="exampleInputUsername">Username</label> -->
+    <input type="text" class="form-group" id="exampleInputUsername" name="username" aria-describedby="usernamelHelp" placeholder="Enter Username">
+    <small id="usernamelHelp" class="form-text text-muted">Minimum 8 characters required</small>
+<br>
+    <!-- <label for="exampleInputEmail1">Email address</label> -->
+    <input type="email" class="form-group" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+<br>
+    <!-- <label for="exampleInputPassword1">Password</label> -->
+    <input type="password" class="form-group" id="exampleInputPassword1" name="password" placeholder="Password">
+<br>
+    <!-- <label for="exampleInputRepeatPassword">Repeat Password</label> -->
+    <input type="password" class="form-group" id="exampleInputRepeatPassword" name="repeatPassword" placeholder="Repeat Password">
+
+<!--    <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--    <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+  <a class="btn btn-secondary" href="{% url 'users-Login' %}">Already a user?Login</a>
+</form>
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
