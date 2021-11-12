@@ -17,7 +17,8 @@
   <div class="container">
 <h1 style="text-align:center">Register</h1>
 
-<form class="form text-xl-center" method="post" action="/Register">
+<form class="form text-xl-center" method="post" action="">
+  {% csrf_token %}
   <div class="form-group my-4">
     <!-- <label for="FullName">Full name</label> -->
     <input type="text" class="form-group" id="FullName" name="fname" aria-describedby="FullNameHelp" placeholder="Enter FullName">
